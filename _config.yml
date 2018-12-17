@@ -16,10 +16,10 @@
 title: thesnwmn
 email: rusty@thesnwmn.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Project browser and dumping ground for my ideas
+  A home for things
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rustythesnwmm
+twitter_username: rustythesnwmn
 github_username:  thesnwmn
 
 # Build settings
