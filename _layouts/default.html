@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onclick="closeMenu(event);">
+  <div class="header">
+    <div class="title">> <a href="/index.html">thesnwmn</a></div>
+    <div class="nav-links" id="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/snippets.html">Snippets</a>
+      <a href="/about.html">About</a>
+    </div>
+    <a href="javascript:void(0);" onclick="toggleMenu(event);" class="nav-button material-icons" id="nav-button">menu</a>
+  </div>
+
+  <div class="footer">
+
+  </div>
+
+  {{ content }}
+
+</body>
+
+<script>
+function toggleMenu(e) {
+  var x = document.getElementById("nav-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  e.preventDefault();
+  return false;
+}
+function closeMenu(e) {
+  var x = document.getElementById("nav-button");
+  var y = document.getElementById("nav-links");
+  if (e.target !== x && e.target !== y) {
+    y.style.display = "none";
+  }
+}
+</script>
+
+</html>
